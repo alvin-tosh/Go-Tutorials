@@ -19,7 +19,7 @@ func main() {
 	fmt.Println(x, y, z, p)                               // 20 true 75 Follow me on Twitter @_Lord_Heathen
 }
 
-//Short variable declaration: Another way is to use the := operator to initialize and assign to variables in one go. 
+//Short variable declaration: Another way is to use the := operator to initialize and assign to variables in one go in the main function. 
 
 
 /*func main() {
