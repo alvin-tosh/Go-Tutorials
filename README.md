@@ -6,7 +6,8 @@ For example;
 ```$ go build Hello.go```
 
 To execute the binary, type ```./``` followed by the name of the binary file. 
-```$ ./hello_world```
+```$ ./Hello.go```
 
 ```# output
-    Hello World```
+    Hello World
+    ```
