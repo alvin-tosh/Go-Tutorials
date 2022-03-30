@@ -28,6 +28,17 @@ func main() {
   fmt.Printf("classic languagues: %v\n", classics) // classic languagues: [C Lisp C++]
 	fmt.Printf("modern languages: %v\n", modern)     // modern languages: [Java Python JavaScript Ruby]
 	fmt.Printf("new languages: %v\n", new)           // new languages: [Go Rust]
+	
+/*
+We make a copy of the languages array using the [:] operator. The resulting copy is a slice. We assert that’s the case using the "reflect" package. 
+Next, we create a slice called frameworks. Notice the blank entry in the square brackets responsible for the size. If we pass a parameter inside these brackets we are creating an array. Leaving it blank creates a slice. 
+From there, we create another slice called jsFrameworks that selects JavaScript frameworks. 
+Finally, we extend our frameworks slice by adding Meteor to the list of frameworks.
+
+The 'append' function pushes new values to the end of a slice and returns a new slice with the same type as the original. 
+In case the capacity of a slice is insufficient to store the new element, a new slice is created that can fit all the elements. 
+In that case, the returned slice will refer to a different underlying array. 
+*/	
   
   allLangs := languages[:]                             // copy of the array
         fmt.Println(reflect.TypeOf(allLangs).Kind())   // slice
@@ -44,4 +55,11 @@ func main() {
         fmt.Printf("all frameworks: %v\n", frameworks)
         fmt.Printf("js frameworks: %v\n", jsFrameworks)
 }
+
+/*
+# output
+...
+all frameworks: [React Vue Angular Svelte Laravel Django Flask Fiber Meteor]
+js frameworks: [React Vue Angular Svelte]
+*/
 
