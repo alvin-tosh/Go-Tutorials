@@ -40,7 +40,7 @@ In case the capacity of a slice is insufficient to store the new element, a new 
 In that case, the returned slice will refer to a different underlying array. 
 */	
   
-  allLangs := languages[:]                             // copy of the array
+	allLangs := languages[:]                             // copy of the array made earlier in Line:17
         fmt.Println(reflect.TypeOf(allLangs).Kind())   // slice
 
         /* Create a slice containing web frameworks */
