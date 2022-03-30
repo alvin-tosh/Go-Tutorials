@@ -9,7 +9,6 @@ package main
 
 import "fmt"
 
-
 /*
 We define a map called firstReleases containing several programming languages as the keys, and their release years as the corresponding values. 
 We also write a loop to traverse the map and output each key-value pair. 
