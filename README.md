@@ -19,5 +19,7 @@ $ go run Hello.go
 
 # output
 Hello World
-
-    
+```
+---------------------------------------------------------------------------------
+:file_folder: 
+Go is a programming language that was developed by Google and has syntax similar to C
