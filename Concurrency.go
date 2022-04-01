@@ -41,3 +41,18 @@ Since we’re dealing with concurrent code, we lose the ability to predict the o
 One POSIBLE output is included below.
 Keep in mind that we’re probably using more goroutines than the number of cores on our machine, hence it’s likely that a single core is time-multiplexed to simulate the concurrency.
 */
+
+/*
+# Output
+gopher 0 started cooking
+gopher 4 started cooking
+gopher 3 started cooking
+gopher 0 finished the dish
+gopher 2 started cooking
+gopher 1 started cooking
+gopher 4 finished the dish
+gopher 3 finished the dish
+gopher 2 finished the dish
+gopher 1 finished the dish
+
+*/
