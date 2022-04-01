@@ -19,9 +19,9 @@ Inside each goroutine, we write the gopher id to standard output as soon the gop
 From there, we’re back to the body of the main function where we receive the gopher id and record their finishing time.
 */
 func main() {
-	c := make(chan int) // Create a channel to pass ints
+	c := make(chan int) 		// Create a channel to pass ints
 	for i := 0; i < 5; i++ {
-		go cookingGopher(i, c) // Start a goroutine
+		go cookingGopher(i, c)  // Start a goroutine
 	}
 
 	for i := 0; i < 5; i++ {
